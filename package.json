@@ -1,0 +1,21 @@
+{
+  "name": "koa1.0_Base",
+  "version": "0.0.1",
+  "description": "koa基础配置",
+  "main": "index.js",
+  "repository": "https://github.com/wysiwyg826/koa1.0_Base.git",
+  "author": "wysiwyg826",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "keygrip": "^1.0.1",
+    "koa": "^1.2.4",
+    "koa-logger": "^1.3.1",
+    "koa-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
