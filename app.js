@@ -21,11 +21,16 @@ app.use(logger());
 // app.keys = "asda"
 // app.keys = new KeyGrip(['im a newer secret', 'i like turtle'], 'sha256');
 
-app.use(function *(){
+const router = require('./config/routers');
+
+app.use(router.routes())
+  .use(router.allowedMethods());
+
+/* app.use(function *(){
   // this.cookies.set('name', 'tobi', {signed: true})
   this.body = 'hello world';
   console.log(this.request)
-})
+})*/
 
 // app.listen(3000);
 
